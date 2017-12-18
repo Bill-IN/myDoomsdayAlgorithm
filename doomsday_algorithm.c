@@ -45,7 +45,7 @@ int main(void)
 	 but these centurial years are leap years if they are exactly divisible by 400.
 	 For example, the years 1700, 1800, and 1900 were not leap years,
 	 but the years 1600 and 2000 were.*/
-	if((year%100==0)&&(year%400==0))
+	if(((year%100==0)&&(year%400==0)) || ((year%4==0)&&(year%100!=0)))
 	{
 		is_a_leap_year=1;
 		doomsdates[0]=4;
